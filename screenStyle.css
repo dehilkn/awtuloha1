@@ -1,0 +1,100 @@
+/*Sea Mist #D8E3E7
+Salted Sky #BEDADC
+Driftwood #89A6A8
+Deep Ocean #496A74*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #496a74;
+    background-color: #d8e3e7;
+
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+a {
+    color: #496a74;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.blog-header {
+    margin-bottom: 1rem;
+}
+
+.blog-header svg {
+    display: inline-block;
+    width: 2rem;
+    height: auto;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+}
+
+.blog-header svg path {
+    stroke: #496a74;
+}
+
+.blog-header h1 {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+img {
+    width: 15rem;
+    max-width: 100%;
+    height: auto;
+    border: 0.1rem solid #89a6a8;
+    border-radius: 0.5rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+th,
+td {
+    border: 0.1rem solid #89a6a8;
+    padding: 0.5rem;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+thead,
+tfoot {
+    background-color: #bedadc;
+}
