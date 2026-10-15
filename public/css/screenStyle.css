@@ -1,0 +1,243 @@
+/*Sea Mist #D8E3E7
+Salted Sky #BEDADC
+Driftwood #89A6A8
+Deep Ocean #496A74*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #496a74;
+    background-color: #d8e3e7;
+
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.35;
+    margin-top: 0;
+}
+
+a {
+    color: #496a74;
+    transition: color 0.25s, background-color 0.25s;
+}
+
+a:hover {
+    color: #203e48;
+    background-color: #bedadc;
+}
+
+a:focus-visible {
+    outline: 0.15rem solid #496a74;
+    outline-offset: 0.2rem;
+}
+
+.blog-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 0.15rem solid #89a6a8;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-header p {
+    margin: 0.5rem 0 0;
+}
+.blog-header svg {
+    width: 2.5rem;
+    height: auto;
+    flex-shrink: 0;
+    transition: transform 0.25s;
+}
+
+.blog-header svg path {
+    stroke: #496a74;
+}
+
+.blog-header h1 {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+.blog-header svg:hover {
+    transform: rotate(-8deg);
+}
+
+.blog-header h1 { /*obnovlenie stranky - anim*/
+    animation: objavenie 0.8s ease-out;
+}
+@keyframes objavenie {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Flexbox - text do prava*/
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.blog-nav {
+    flex: 0 0 12rem;
+}
+
+.blog-nav h2 {
+    font-size: 1.1rem;
+}
+
+.blog-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-nav a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-left: 0.2rem solid transparent;
+    text-decoration: none;
+}
+
+.blog-nav a[aria-current="page"] {
+    background-color: #bedadc;
+    border-left-color: #496a74;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+    max-width: 48rem;
+}
+
+main p:first-child {
+    margin-top: 0;
+}
+
+section {
+    border-top: 0.1rem solid #89a6a8;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+}
+img {
+    width: 15rem;
+    max-width: 100%;
+    height: auto;
+    border: 0.1rem solid #89a6a8;
+    border-radius: 0.5rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+th,
+td {
+    border: 0.1rem solid #89a6a8;
+    padding: 0.5rem;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+thead,
+tfoot {
+    background-color: #bedadc;
+}
+
+.blog-footer {
+    border-top: 0.15rem solid #89a6a8;
+    margin-top: 2rem;
+    padding-top: 0.75rem;
+    font-size: 0.9rem;
+    overflow-wrap: break-word;
+}
+
+.blog-footer p {
+    margin: 0.25rem 0;
+}
+
+
+/*smaller fotos, menu above text, menu for full width*/
+@media (max-width: 48rem) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .layout {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .blog-nav {
+        flex: auto;
+        width: 100%;
+        border-bottom: 0.1rem solid #89a6a8;
+        padding-bottom: 0.5rem;
+    }
+
+    .blog-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 0.35rem;
+    }
+}
+/*limits for users*/
+@media (prefers-reduced-motion: reduce) {
+    .blog-header h1 {
+        animation: none;
+    }
+
+    a, .blog-header svg {
+        transition: none;
+    }
+
+    .blog-header svg:hover {
+        transform: none;
+    }
+}
