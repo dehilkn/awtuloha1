@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Svet mačiek</title>
-    <link rel="stylesheet" href="screenStyle.css">
+    <link rel="stylesheet" href="public/css/screenStyle.css" media="screen">
+    <link rel="stylesheet" href="public/css/printStyle.css" media="print">
 </head>
 <body>
 <div class="blog-header">
@@ -21,39 +22,51 @@
 </svg>
 <h1>Svet mačiek</h1>
 </div>
-<p>
-    Vitajte na blogu venovanom mačkám.
-    Nájdete tu články o ich plemenách, starostlivosti
-    a možnostiach spoločného hrania.
-</p>
+<div class="layout">
+    <nav class="blog-nav" aria-label="Hlavná navigácia">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html" aria-current="page">Domov</a></li>
+            <li><a href="article1.html">Plemená mačiek</a></li>
+            <li><a href="article2.html">Starostlivosť</a></li>
+            <li><a href="article3.html">Hry a zábava</a></li>
+        </ul>
+    </nav>
 
-<h2>Zoznam článkov</h2>
+    <main>
+        <p>
+            Vitajte na blogu venovanom mačkám.
+            Nájdete tu články o ich plemenách, starostlivosti
+            a možnostiach spoločného hrania.
+        </p>
 
-<ul>
-    <li>
-        <a href="article1.html">
-            Plemená mačiek a ich charakteristika
-        </a>
-    </li>
-    <li>
-        <a href="article2.html">
-            Základná starostlivosť o mačku
-        </a>
-    </li>
-    <li>
-        <a href="article3.html">
-            Hry a zábava pre mačky
-        </a>
-    </li>
-</ul>
+        <section>
+            <h2>Zoznam článkov</h2>
 
-<p>Autor: Denys Khylevych</p>
+            <ul>
+                <li>
+                    <a href="article1.html">
+                        Plemená mačiek a ich charakteristika
+                    </a>
+                </li>
+                <li>
+                    <a href="article2.html">
+                        Základná starostlivosť o mačku
+                    </a>
+                </li>
+                <li>
+                    <a href="article3.html">
+                        Hry a zábava pre mačky
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</div>
 
-<p>
-    Kontakt:
-    <a href="mailto:denys.khylevych@student.tuke.sk">
-        denys.khylevych@student.tuke.sk
-    </a>
-</p>
+<footer class="blog-footer">
+    <p>Autor: Denys Khylevych | Svet mačiek</p>
+    <p>Kontakt: <a href="mailto:denys.khylevych@student.tuke.sk">denys.khylevych@student.tuke.sk</a></p>
+</footer>
 </body>
 </html>
