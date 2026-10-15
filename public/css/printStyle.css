@@ -1,0 +1,63 @@
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: black;
+    background: white;
+    margin: 0;
+}
+
+.blog-nav, .blog-header svg, .blog-header p, .blog-footer {
+    display: none;
+}
+
+h1, h2 {
+    line-height: 1.25;
+    break-after: avoid;
+}
+
+h1 {
+    font-size: 22pt;
+}
+
+h2 {
+    font-size: 16pt;
+    margin-top: 1em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    width: 5cm;
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+th, td {
+    border: 1pt solid black;
+    padding: 0.4em;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+tr, img {
+    break-inside: avoid;
+}
+
+@page {
+    margin: 2cm;
+}
